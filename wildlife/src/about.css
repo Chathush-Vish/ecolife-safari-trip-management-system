@@ -1,0 +1,171 @@
+:root {
+   --primaryGreen: #008455;
+   --primaryBlack: #111111;
+   --seconderyCream: #f5dea8;
+   --lightGreen: #b5e48c;
+   --mainWhite: #ffffff;
+   --seconderyText: #2f3e46;
+}
+
+/* Globel styles */
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   transition: all 0.2s ease-in-out;
+}
+
+body {
+   color: var(--primaryBlack);
+   font-family: "Poppins", sans-serif;
+}
+
+a {
+   text-decoration: none;
+   color: var(--primaryBlack);
+}
+
+ul {
+   list-style: none;
+}
+
+button {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-weight: 500;
+   font-size: 1.1em;
+   cursor: pointer;
+}
+
+input:focus {
+   outline: none;
+}
+
+/* local styles */
+.about-hero {
+   width: 100%;
+   height: 50vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+      url(../images/about-2.jpg);
+   background-size: cover;
+   background-position: center;
+   background-attachment: fixed;
+   margin-bottom: 70px;
+}
+
+.about-hero h1 {
+   background-color: #fff;
+   padding: 10px 40px;
+   font-weight: 600;
+   border-radius: 4px;
+   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.about-info {
+   display: flex;
+   flex-direction: column;
+   padding: 40px 150px;
+   margin-bottom: 40px;
+}
+.about-info-content p {
+   text-align: justify;
+}
+.about-info-content {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.about-info-content div {
+   width: 50%;
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+.icnc {
+   padding-left: 40px;
+}
+.icc {
+   padding-right: 40px;
+}
+.about-info img {
+   height: 400px;
+   object-fit: cover;
+}
+.team {
+   padding: 70px 150px;
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   gap: 30px;
+   background-color: var(--primaryGreen);
+
+   color: #fff;
+}
+
+.team-container {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 20px;
+}
+.team .title h1 {
+   font-size: 2em;
+   font-weight: 600;
+}
+.card {
+   display: flex;
+   width: 33%;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+   padding: 20px 30px;
+   border-radius: 5px;
+}
+.card img {
+   width: 150px;
+   height: 150px;
+   border-radius: 50%;
+   object-fit: cover;
+   border: 1px solid #fff;
+   margin: 20px 0;
+}
+.card .det {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   gap: 10px;
+}
+.card p {
+   color: #aef8d0;
+}
+.card .det h4 {
+   font-size: 1.4em;
+   font-weight: 500;
+}
+
+.contact {
+   padding: 70px 150px;
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+.contact-container {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   padding: 40px 80px;
+   background-color: #fff;
+}
